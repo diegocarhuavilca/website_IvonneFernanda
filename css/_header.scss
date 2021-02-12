@@ -1,0 +1,48 @@
+.header {
+    nav {
+        padding: 1.0625rem 1.5rem;
+    }
+
+    &__logo {
+        img {
+            top: 7.625rem;
+            left: 3.25rem;
+            padding-top: 2.25rem;
+            padding-left: 5rem;
+        }
+
+    }
+
+    &__menu {
+
+        top: 5rem;
+        left: 5rem;
+        padding-top: 2.25rem;
+        padding-right: 5rem;
+        opacity: 0.60;
+        transition: opacity 50ms;
+
+        >span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: white;
+
+
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+        }
+
+
+
+
+    }
+
+    &__menu:hover {
+        opacity: 1;
+    }
+
+
+
+}
