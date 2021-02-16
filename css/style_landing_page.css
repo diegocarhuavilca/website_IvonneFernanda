@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap');
 
 hmtl {
   font-size: 100%;
@@ -50,7 +50,7 @@ a:hover {
   -ms-user-select: none !important;
   user-select: none !important;
   color: white;
-  font-family: 'Cinzel', serif;
+  font-family: 'Newsreader', serif;
   font-size: 10vh;
   text-align: center;
 }

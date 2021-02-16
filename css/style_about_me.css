@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+    display:flex;
+    place-items: center;
+    justify-content:center;
+    height:100vh;
+    background-color: #A46767;
+}
+
+.fondo{
+    width:61.6875rem;
+    height:35.8125rem;
+    background-color:white;
+}
+
+.fondo h1{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 3.625rem;
+    margin-left:3rem;
+}
+
+.linea{
+    border-bottom: solid 3px black;
+    border-radius: 50px;
+    margin-left: 3rem;
+    margin-right: 20.75rem;
+}
+
+.fondo h2{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 0.2rem;
+    margin-left:3rem;
+}
+
+.fondo h3{
+    font-family: 'Quicksand', sans-serif;
+    margin-left:4.9375rem;
+}
+
+.parrafo1{
+    font-family: 'Quicksand', sans-serif;
+    margin-top:1rem;
+    margin-left:3rem;
+    margin-right: 25.875rem;
+    text-align: justify;
+}
+
+.parrafo2{
+    font-family: 'Quicksand', sans-serif;
+    margin-top:2rem;
+    margin-left:11.5625rem;
+    margin-right: 25.875rem;
+    text-align: justify;
+}
+
+.fb{
+    margin-top:1rem;
+    margin-left:3rem;
+}
+
+.ig{
+    margin-top:1rem;
+    margin-left:3rem;
+}
+
+.wsp{
+    margin-top:1rem;
+    margin-left:3rem;
+}
+
+
+.iconos img{
+    cursor: pointer;
+    width:1.9375rem;
+    height:1.9375rem;
+}
+
+img{
+    margin-top: 0;
+    width:19.875rem;
+}
