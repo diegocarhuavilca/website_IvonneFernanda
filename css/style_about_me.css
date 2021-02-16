@@ -21,11 +21,13 @@ body{
     width:61.6875rem;
     height:35.8125rem;
     background-color:white;
+    box-shadow: 2px 2px 5px black;
 }
 
 .fondo h1{
     font-family: 'Quicksand', sans-serif;
     margin-top: 3.625rem;
+    font-size:30px;
     margin-left:3rem;
 }
 
@@ -85,7 +87,10 @@ body{
     height:1.9375rem;
 }
 
-img{
-    margin-top: 0;
+.foto{
+    position:absolute;
+    right:100px;
+    top:100px;
     width:19.875rem;
 }
+
