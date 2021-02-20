@@ -38,6 +38,7 @@ body {
 
 .contenido-principal__contenedor {
     width: 50%;
+    margin: auto;
 }
 
 .contenido-principal__titulo {
