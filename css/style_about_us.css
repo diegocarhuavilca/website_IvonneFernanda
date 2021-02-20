@@ -44,11 +44,13 @@ body {
 .contenido-principal__imagen {
     margin-right: 20px;
     width: 50%;
+    margin: auto;
 }
 
 .contenido-principal__contenedor {
     margin-left: 20px;
     width: 50%;
+    margin: auto;
 }
 
 .contenido-principal__titulo {
