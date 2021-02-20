@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 body {
     background-color: #A46767;
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -15,6 +18,7 @@ body {
     max-width: 1200px;
     width: 90%;
     margin: auto;
+    margin-top:80px;
 }
 
 .contenedor h1 {
@@ -24,23 +28,32 @@ body {
 /* --- --- CONTENEDOR PRINCIPAL --- --- */
 
 .contenido-principal {
-    margin-bottom: 50px;
+    background-color:white;
+    padding:20px;
+    border-radius:5px;
+    filter: drop-shadow(5px 5px 10px #444);
+    margin: 7%;
     display: flex;
     align-items: center;
 }
 
+.contenido-principal img{
+    max-width: 300px;
+}
+
 .contenido-principal__imagen {
-    vertical-align: top;
     margin-right: 20px;
     width: 50%;
-    max-width: 550px;
 }
 
 .contenido-principal__contenedor {
+    margin-left: 20px;
     width: 50%;
 }
 
 .contenido-principal__titulo {
+    font-family: 'Open Sans', sans-serif;
+    color:black;
     font-weight: normal;
     font-size: 28px;
 }
@@ -49,7 +62,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
     line-height: 30px;
-    color: #CFCFCF;
+    color: black;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
 /* --- --- CAROUSEL --- --- */
@@ -92,6 +107,10 @@ body {
 
 .carousel__elemento {
     text-align: center;
+}
+
+.carousel__elemento p{
+    margin-top: 20px;
 }
 
 
