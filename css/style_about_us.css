@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A46767;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    margin-top:80px;
+}
+
+.contenedor h1 {
+    text-align: center;
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+    background-color:white;
+    padding:20px;
+    border-radius:5px;
+    filter: drop-shadow(5px 5px 10px #444);
+    margin: 7%;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-principal img{
+    max-width: 300px;
+}
+
+.contenido-principal__imagen {
+    margin-right: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.contenido-principal__contenedor {
+    margin-left: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.contenido-principal__titulo {
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.contenido-principal__resumen {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    line-height: 30px;
+    color: black;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+    position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 60px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+    opacity: 100%;
+}
+
+.carousel__anterior {
+    left: -30px;
+}
+
+.carousel__siguiente {
+    right: -30px;
+}
+
+.carousel__lista {
+    overflow: hidden;
+}
+
+.carousel__elemento {
+    text-align: center;
+}
+
+.carousel__elemento p{
+    margin-top: 20px;
+}
+
+
+
+.carousel {
+    margin-bottom: 40px;
+}
+
+.carousel__elemento img {
+    width:80%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 40px 0;
+    }
+
+    .contenido-principal {
+        flex-direction: column;
+    }
+
+    .contenido-principal>* {
+        width: 100%;
+    }
+}
