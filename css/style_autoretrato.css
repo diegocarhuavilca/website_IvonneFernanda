@@ -8,21 +8,21 @@ body {
     align-items: center;
   }
   
-  .container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10vmin;
     overflow: hidden;
     transform: skew(5deg);
-  }
-  .container .card {
+ }
+.container .card {
     flex: 1;
     transition: all 1s ease-in-out;
     height: 75vmin;
     position: relative;
-  }
-  .container .card .card__head {
+}
+.container .card .card__head {
     color: black;
     background:#fbb3bc;
     padding: 0.5em;
@@ -36,10 +36,10 @@ body {
     left: 0;
     font-size: 1em;
     white-space: nowrap;
-  }
-  .container .card:hover {
-    flex-grow: 10;
-  }
+}
+.container .card:hover {
+  flex-grow: 10;
+}
   .container .card:hover img {
     filter: grayscale(0);
   }
@@ -61,3 +61,120 @@ body {
   .container .card:not(:nth-child(5)) {
     margin-right: 1em;
   }
+
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  transition: all .7s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay .slidshow {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, .9);
+  color: #000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.slidshow img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.btn-cerrar {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, .7);
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: all .2s ease;
+}
+
+.btn-cerrar:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.botones {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgb(240, 106, 45); 
+}
+
+.botones:hover > i {
+  transform: scale(1.1);
+  transition: all .2s ease;
+}
+
+.atras {
+  left: 20px;
+}
+
+.adelante {
+  right: 20px;
+}
+.mdi {
+  pointer-events: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+  .columna{
+    flex: 50%;
+    max-width: 50%;
+  }
+  .botones{
+    font-size: 55px;
+  }
+  .atras{
+    left: 5px;
+  }
+  .adelante{
+    right: 5px;
+  }
+  .slidshow img {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .columna{
+    flex: 100%;
+    max-width: 100%;
+  }
+
+}
