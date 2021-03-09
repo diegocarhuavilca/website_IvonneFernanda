@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: #A46767;
-    color: #fff;
+    background-color: #fce4e4;
+    color: black;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
@@ -86,7 +86,7 @@ body {
     line-height: 30px;
     text-align: center;
     background: none;
-    color: #fff;
+    color: black;
     opacity: 20%;
 }
 
